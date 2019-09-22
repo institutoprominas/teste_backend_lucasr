@@ -1,0 +1,15 @@
+version: '2'
+services:
+  service:
+    container_name: microservice_name
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./dist:/opt/services/microservice_name/dist
+      - ./node_modules:/opt/services/microservice_name/node_modules
+    image: prominas/microservice_name
+    tty: true
+    environment:
+      - NODE_ENV=production
+    entrypoint: node dist/app.js

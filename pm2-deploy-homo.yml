@@ -1,0 +1,8 @@
+apps:
+  - script      : dist-homo/app.js
+    name        : api_name_homo //change-me
+    instances   : 1
+    exec_mode   : fork
+    watch       : false
+    env         :
+      NODE_ENV  : homologation
