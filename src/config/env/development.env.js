@@ -24,7 +24,7 @@ module.exports = {
     server: {
         secure: false,
         host  : '0.0.0.0',
-        port  : 3087,
+        port  : 3000,
         cors  : {
             'Access-Control-Allow-Origin' : '*',
             'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
@@ -57,9 +57,9 @@ module.exports = {
             authSource    : 'admin',
             auto_reconnect: true,
             ssl           : true,
-            user          : 'seu nome',
-            pass          : 'seu nome',
-            name          : 'seu nome',
+            user          : 'lucasr',
+            pass          : 'lucasr',
+            name          : 'lucasr',
             dialect       : 'mongodb',
             charset       : 'utf8',
             logging       : false,
