@@ -9,6 +9,3 @@ dist-homo
 releases
 node_modules/
 storage/logs
-src/config/env/*
-!src/config/env/production.env.js
-!src/config/env/homologation.env.js
