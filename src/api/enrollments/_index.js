@@ -1,6 +1,7 @@
 // Joi Validate
-import createValidate           from './_validates/create.validate';
-import readByCpfValidate        from './_validates/readCpf.validate';
+import createValidate               from './_validates/create.validate';
+import graduationDateValidate       from './_validates/graduationDate.validate';
+import readByCpfValidate            from './_validates/readCpf.validate';
 
 // Example Middleware
 import create               from './create';
@@ -12,6 +13,7 @@ export default (route) => {
     // Route to create new enrollment
     route.post('/enrollments', [
         createValidate,
+        graduationDateValidate,
         create
     ]);
 
